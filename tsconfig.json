@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "outDir": "dist",
+        "lib": [
+            "es2018",
+        ],
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
