@@ -8,18 +8,22 @@ import os, json
 #     __builtins__.print(f"[PYnSeeker] {x}")
 
 """
-    Contrast/brightness parameters for (improves the recall)
+    Contrast/brightness parameters for the first phase 
+        (basically boosting the contrast of the image).
 """
 alpha = 2.5
 beta = -2.5*128 + 50
 
 """
-    cv.
+    cv.matchTemplate() threshold for registering a pin.
+    Decrease in case of unregistered pins.
+    Increase in case of false positives.
 """
 threshold = 0.65
 
 """
-
+    Minimal distance (in pixels in both directions) between two pins.
+    Decrease if the pins are close to each other.
 """
 distance = 10
 
